@@ -3384,6 +3384,113 @@
       }
     }
   </style>
+  <style>
+    /* MOBILE NAVIGATION FIX */
+    @media (max-width:1080px) {
+      .main-header {
+        overflow: visible !important;
+      }
+
+      .ambuja-nav {
+        display: grid !important;
+        grid-template-columns: 1fr auto !important;
+        gap: 10px !important;
+        padding-top: 6px !important;
+      }
+
+      .ambuja-links {
+        display: flex !important;
+        grid-column: 1/-1 !important;
+        order: 3 !important;
+        width: 100% !important;
+        gap: 6px !important;
+        padding: 4px 0 9px !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        white-space: nowrap !important;
+        scrollbar-width: none !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      .ambuja-links::-webkit-scrollbar {
+        display: none !important;
+      }
+
+      .ambuja-links a {
+        flex: 0 0 auto !important;
+        padding: 9px 13px !important;
+        border: 1px solid rgba(19, 19, 17, .12) !important;
+        border-radius: 999px !important;
+        background: #fff !important;
+        color: #20211f !important;
+        font-size: .76rem !important;
+        line-height: 1 !important;
+      }
+
+      .ambuja-links a::after {
+        display: none !important;
+      }
+
+      .ambuja-links a.active,
+      .ambuja-links a:hover {
+        background: #20a7c9 !important;
+        border-color: #20a7c9 !important;
+        color: #fff !important;
+      }
+
+      .menu-toggle {
+        display: none !important;
+      }
+
+      .hero {
+        padding-top: 136px !important;
+      }
+    }
+
+    @media (max-width:700px) {
+      .ambuja-nav {
+        min-height: auto !important;
+      }
+
+      .ambuja-brand span {
+        max-width: 145px !important;
+      }
+
+      .enterprise-tools {
+        gap: 5px !important;
+      }
+
+      .enterprise-icon {
+        width: 32px !important;
+        height: 32px !important;
+      }
+
+      .ambuja-links {
+        margin-top: 3px !important;
+      }
+
+      .ambuja-links a {
+        padding: 8px 11px !important;
+        font-size: .72rem !important;
+      }
+
+      .hero {
+        padding-top: 128px !important;
+      }
+    }
+
+    html[data-theme="dark"] .ambuja-links a {
+      background: #111c2c !important;
+      color: #fff !important;
+      border-color: rgba(255, 255, 255, .18) !important;
+    }
+
+    html[data-theme="dark"] .ambuja-links a.active,
+    html[data-theme="dark"] .ambuja-links a:hover {
+      background: #20a7c9 !important;
+      border-color: #20a7c9 !important;
+    }
+  </style>
 </head>
 
 <body><a href="#main" style="position:absolute;left:-9999px">Skip to content</a>
@@ -3435,7 +3542,7 @@
               class="btn ghost">Request a quote</a></div>
         </div>
       </div>
-      <div class="hero-media"><img alt="Premium tent setup" src="tent-view.png">
+      <div class="hero-media"><img alt="Premium tent setup" src="tent-view.jpg">
         <div class="hero-badge">Direct manufacturer<br>since 2001</div>
       </div>
     </div>
@@ -3479,7 +3586,7 @@
         <div class="business-cards">
           <article class="business-card manufacturing-card">
             <div class="business-number">01</div>
-            <div class="business-icon">MTM</div>
+            <div class="business-icon">M</div>
             <p class="business-type">Manufacturing division</p>
             <h3>Master Tent Material Manufactures</h3>
             <p>Focused on manufacturing selected tent and event products, custom sizes, production-based orders and bulk
@@ -3493,7 +3600,7 @@
           </article>
           <article class="business-card trading-card">
             <div class="business-number">02</div>
-            <div class="business-icon">CSC</div>
+            <div class="business-icon">C</div>
             <p class="business-type">Trading &amp; supply division</p>
             <h3>Choudhary Sales Corporation</h3>
             <p>Focused on trading, sourcing and supplying a broader range of wedding, catering, hospitality and event
@@ -3521,7 +3628,7 @@
             network.</p>
         </div>
         <div class="story-stage">
-          <div class="story-image"><img alt="Premium tent and event setup" src="images/tent-view.png" loading="lazy">
+          <div class="story-image"><img alt="Premium tent and event setup" src="images/tent-view.jpg" loading="lazy">
             <div class="story-badge"><strong>Since 2001</strong> <span>Made with event-industry experience</span></div>
           </div>
           <div class="story-principles">
